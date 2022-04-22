@@ -135,7 +135,9 @@
 									Help</a
 								>
 							</li>
-							<li
+
+                            <!-- Display when not logged in -->
+							<!-- <li
 								class="header__navbar-item header__navbar-item--strong"
 							>
 								Sign Up
@@ -144,7 +146,28 @@
 								class="header__navbar-item header__navbar-item--strong"
 							>
 								Login
-							</li>
+							</li> -->
+
+                            <!-- Already logged in -->
+                            <li class="header__navbar-item header__navbar-user">
+                                <img src="./assets/img/avatar.png" alt="" class="header__navbar-user-img">
+                                <span class="header__navbar-user-name">Ashuxie Minux</span>
+
+                                <ul class="header__navbar-user-menu">
+                                    <li class="header__navbar-user-item">
+                                        <a href="">My account</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Address</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">My orders</a>
+                                    </li>
+                                    <li class="header__navbar-user-item">
+                                        <a href="">Logout</a>
+                                    </li>
+                                </ul>
+                            </li>
 						</ul>
 						<!-- End of right list on nav -->
 					</nav>
@@ -155,6 +178,7 @@
                             <img src="./assets/img/logo-50.svg" alt="">
                         </div>
 
+                        <!-- Search bar -->
                         <div class="header__search">
                             <div class="header__search-input-wrap">
 
@@ -194,8 +218,84 @@
                             </button>
                         </div>
 
+                        <!-- Cart layout -->
                         <div class="header__cart">
-                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                            <div class="header__cart-wrap">
+                                <i class="header__cart-icon fas fa-shopping-cart"></i>
+                                <span class="header__cart-notice">3</span>
+
+                                <!-- Add 'header__cart-list--no-cart' for no product display -->
+                                <div class="header__cart-list ">
+                                    <img src="./assets/img/no-cart.png" alt="" class="header__cart-no-cart-img">
+                                    <span class="header__cart-list-no-cart-msg">Oops, there is no product!</span>
+
+                                    <h4 class="header__cart-heading">Added Products</h4>
+                                    <ul class="header__cart-list-item">
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="https://product.hstatic.net/1000026716/product/gearvn-ban-phim-ducky-one-2-tuxedo-tkl-666_c0143f9471224d9d8f854c896421aae4.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Ducky One 2 Tuxedo TKL</h5>
+
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.450.000VND</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
+                                                    <span class="header__cart-item-remove">Delete</span>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="https://akko.vn/wp-content/uploads/2022/01/ban-phim-akko-pc75b-plus-year-of-tiger-akkovn.jpg" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">AKKO PC75B Plus Year of Tiger</h5>
+
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">2.799.000VND</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
+                                                    <span class="header__cart-item-remove">Delete</span>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <!-- Cart item -->
+                                        <li class="header__cart-item">
+                                            <img src="https://d1vm37nfym7tjl.cloudfront.net/web/image/product.product/10747/image_1024/%5BFKBC87M-EWG2%5D%20B%C3%A0n%20ph%C3%ADm%20c%C6%A1%20Filco%20Majestouch%20Convertible%202%20Matcha%20%28Tenkeyless%29%20%28Cherry%20MX%20Brown%20switch%29?unique=334ec4d" alt="" class="header__cart-img">
+                                            <div class="header__cart-item-info">
+                                                <div class="header__cart-item-head">
+                                                    <h5 class="header__cart-item-name">Filco Majestouch Convertible 2 Matcha</h5>
+
+                                                    <div class="header__cart-item-price-wrap">
+                                                        <span class="header__cart-item-price">3.850.000VND</span>
+                                                        <span class="header__cart-item-multiply">x</span>
+                                                        <span class="header__cart-item-quantity">1</span>
+                                                    </div>
+                                                </div>
+                                                <div class="header__cart-item-body">
+                                                    <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
+                                                    <span class="header__cart-item-remove">Delete</span>
+
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+
+                                    <a href="#" class="header__cart-view-cart btn btn--primary">View Cart</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <!-- End of Header search-->
