@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Ashuxie Shop</title>
+
+		<!-- Normalize css CDN -->
+		<link rel="stylesheet" href="./assets/css/normalize.min.css" />
+
+		<!-- CSS from Assets -->
+		<link rel="stylesheet" href="./assets/css/base.css" />
+		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link
+			rel="stylesheet"
+			href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
+		/>
+	</head>
+	<body>
+		<div class="app">
+			<header class="header">
+				<section class="grid">
+					<nav class="header__navbar">
+						<ul class="header__navbar-list">
+							<li
+								class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separator"
+							>
+								Welcome to Ashuxie Shop!
+
+								<!-- Header QR Code -->
+								<div class="header__qr">
+									<img
+										src="./assets/img/qr-img.png"
+										alt="QR Code"
+										class="header__qr-img"
+									/>
+									<div class="header__qr-apps">
+										<span>Just a demo QR code</span>
+									</div>
+								</div>
+							</li>
+							<li class="header__navbar-item">
+								<span class="header__navbar-title--no-pointer"
+									>Contact</span
+								>
+								<a
+									href="https://www.facebook.com/quach.minh.9216/"
+									target="_blank"
+									class="header__navbar-icon-link"
+									><i
+										class="header__navbar-icon fab fa-facebook"
+									></i
+								></a>
+								<a
+									href="https://www.linkedin.com/in/hoang-minh-quach/"
+									target="_blank"
+									class="header__navbar-icon-link"
+									><i
+										class="header__navbar-icon fab fa-linkedin"
+									></i
+								></a>
+								<a
+									href="https://github.com/minhquach8"
+									target="_blank"
+									class="header__navbar-icon-link"
+									><i
+										class="header__navbar-icon fab fa-github"
+									></i
+								></a>
+							</li>
+						</ul>
+						<!-- End of left list on nav -->
+
+						<ul class="header__navbar-list">
+							<li class="header__navbar-item header__navbar-item-has-notify">
+								<a href="" class="header__navbar-item-link">
+									<i
+										class="header__navbar-icon fas fa-bell"
+									></i>
+									Notification
+								</a>
+
+								<!-- Notification popup -->
+								<div class="header__notify">
+									<header class="header__notify-header">
+										<h3>Latest notifications</h3>
+									</header>
+                                    <ul class="header__notify-list">
+                                        <li class="header__notify-item header__notify-item--notviewed">
+                                            <a href=""" class="header__notify-link">
+                                                <img class="header__notify-img" src="https://cdn.shopify.com/s/files/1/0059/0630/1017/t/5/assets/keychronq2custommechanicalkeyboardblue2-1638160245416.png?v=1638160247" alt="">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Keychron Q2</span>
+                                                    <span class="header__notify-description">The Q2 is a fully customizable mechanical keyboard with a compact layout that pushes your typing experience to the next level.</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end of a noti-item -->
+                                        <li class="header__notify-item">
+                                            <a href=""" class="header__notify-link">
+                                                <img class="header__notify-img" src="https://en.akkogear.com/wp-content/uploads/2022/04/Black-Cyan-3098B1.jpg" alt="">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Black&Cyan 3098B</span>
+                                                    <span class="header__notify-description">Beken Multi-modes Chip with BT5.0/2.4Ghz/Type-C All-in-One</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end of a noti-item -->
+                                        <li class="header__notify-item">
+                                            <a href=""" class="header__notify-link">
+                                                <img class="header__notify-img" src="https://en.akkogear.com/wp-content/uploads/2022/03/Doraemon-Rainbow-3098B.jpg" alt="">
+                                                <div class="header__notify-info">
+                                                    <span class="header__notify-name">Doraemon Rainbow 3098B</span>
+                                                    <span class="header__notify-description">Beken Multi-modes Chip with BT5.0/2.4Ghz/Type-C All-in-One</span>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <!-- end of a noti-item -->
+                                    </ul>
+                                    <footer class="header__notify-footer">
+                                        <a href="" class="header__notify-footer-btn">See all</a>
+                                    </footer>
+								</div>
+								<!-- end of notification popup -->
+							</li>
+							<li class="header__navbar-item">
+								<a
+									href=""
+									class="header__navbar-item-link header__navbar-item--separator"
+								>
+									<i
+										class="header__navbar-icon far fa-question-circle"
+									></i>
+									Help</a
+								>
+							</li>
+							<li
+								class="header__navbar-item header__navbar-item--strong"
+							>
+								Sign Up
+							</li>
+							<li
+								class="header__navbar-item header__navbar-item--strong"
+							>
+								Login
+							</li>
+						</ul>
+						<!-- End of right list on nav -->
+					</nav>
+
+                    <!-- Header search-->
+                    <div class="header-with-search">
+                        <div class="header__logo">
+                            <img src="./assets/img/logo-50.svg" alt="">
+                        </div>
+
+                        <div class="header__search">
+                            <div class="header__search-input-wrap">
+
+                                <input type="text" class="header__search-input" placeholder="Search product...">
+
+                                <!-- Search history -->
+                                <div class="header__search-history">
+                                    <h3 class="header__search-history-heading">Search History</h3>
+                                    <ul class="header__search-history-list">
+                                        <li class="header__search-history-item">
+                                            <a href="">Keychron Q8</a>
+                                        </li>
+                                        <li class="header__search-history-item">
+                                            <a href="">Filco Majestic</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="header__search-select">
+                                <span class="header__search-select-label">In Shop</span>
+                                <i class="header__search-select-icon fas fa-angle-down"></i>
+
+                                <ul class="header__search-option">
+                                    <li class="header__search-option-item header__search-option-item--active">
+                                        <span>In Shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+                                    <li class="header__search-option-item">
+                                        <span>Outside of Shop</span>
+                                        <i class="fas fa-check"></i>
+                                    </li>
+
+                                </ul>
+                            </div>
+                            <button class="header__search-btn">
+                                <i class="header__search-btn-icon fas fa-search"></i>
+                            </button>
+                        </div>
+
+                        <div class="header__cart">
+                            <i class="header__cart-icon fas fa-shopping-cart"></i>
+                        </div>
+                    </div>
+                    <!-- End of Header search-->
+				</section>
+			</header>
+			<div class="container"></div>
+			<footer class="footer"></footer>
+		</div>
+
+        <!-- MODAL  -->
+        <!-- <div class="modal">
+            <div class="modal__body"> -->
+                <!-- Register form -->
+                <!-- <div class="auth-form">
+
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Sign Up</h3>
+                            <span class="auth-form__switch-btn">Login</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input class="auth-form__input" type="email" placeholder="Your email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input class="auth-form__input" type="password" placeholder="Your password">
+                            </div>
+                            <div class="auth-form__group">
+                                <input class="auth-form__input" type="password" placeholder="Your password again">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <p class="auth-form__policy-text">
+                                I accept the
+                                <a href="" class="auth-form__text-link">Terms of Use</a> &
+                                <a href="" class="auth-form__text-link">Privacy Policy</a>.
+                            </p>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-margin btn--normal">RETURN</button>
+                            <button class="btn btn--primary">SIGN UP</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebook auth-form__socials-icon btn btn--size-s btn--with-icon">
+                            <i class="fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">Login with Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__socials-google auth-form__socials-icon btn btn--size-s btn--with-icon">
+                            <i class="fab fa-google"></i>
+                            <span class="auth-form__socials-title">Login with Google</span>
+                        </a>
+                    </div>
+                </div> -->
+                <!-- Login form -->
+                <!-- <div class="auth-form">
+
+                    <div class="auth-form__container">
+                        <div class="auth-form__header">
+                            <h3 class="auth-form__heading">Login</h3>
+                            <span class="auth-form__switch-btn">Sign Up</span>
+                        </div>
+                        <div class="auth-form__form">
+                            <div class="auth-form__group">
+                                <input class="auth-form__input" type="email" placeholder="Your email">
+                            </div>
+                            <div class="auth-form__group">
+                                <input class="auth-form__input" type="password" placeholder="Your password">
+                            </div>
+                        </div>
+                        <div class="auth-form__aside">
+                            <div class="auth-form__help">
+                                <a href="" class="auth-form__help-link auth-form__help-forgot">Forgot password</a>
+                                <span class="auth-form__help-separator"></span>
+                                <a href="" class="auth-form__help-link">Need helps?</a>
+                            </div>
+                        </div>
+                        <div class="auth-form__controls">
+                            <button class="btn auth-form__controls-margin btn--normal">RETURN</button>
+                            <button class="btn btn--primary">LOGIN</button>
+                        </div>
+                    </div>
+
+                    <div class="auth-form__socials">
+                        <a href="" class="auth-form__socials-facebook auth-form__socials-icon btn btn--size-s btn--with-icon">
+                            <i class="fab fa-facebook-square"></i>
+                            <span class="auth-form__socials-title">Login with Facebook</span>
+                        </a>
+                        <a href="" class="auth-form__socials-google auth-form__socials-icon btn btn--size-s btn--with-icon">
+                            <i class="fab fa-google"></i>
+                            <span class="auth-form__socials-title">Login with Google</span>
+                        </a>
+                    </div>
+                </div> -->
+            <!-- </div>
+            <div class="modal__overlay"></div>
+        </div> -->
+        <!-- end of Modal -->
+	</body>
+</html>
