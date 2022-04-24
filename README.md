@@ -1,1 +1,1 @@
-- Learn from this repo [html-css-course](https://github.com/jonasschmedtmann/html-css-course) by _Jonas Schmedtmann_
+-   Learn from this useful web [FullStack F8](https://fullstack.edu.vn/) by _Son Dang_
