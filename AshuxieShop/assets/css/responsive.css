@@ -167,3 +167,9 @@
 		justify-content: center;
 	}
 }
+
+@media (max-width: 739px) {
+	.header__sort-best-selling {
+		overflow: hidden;
+	}
+}
