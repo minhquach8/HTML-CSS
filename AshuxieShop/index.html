@@ -15,6 +15,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 		<link rel="stylesheet" href="./assets/css/base.css" />
 		<link rel="stylesheet" href="./assets/css/main.css" />
+		<link rel="stylesheet" href="./assets/css/grid.css" />
+		<link rel="stylesheet" href="./assets/css/responsive.css" />
 		<link
 			rel="stylesheet"
 			href="./assets/fonts/fontawesome-free-6.1.1-web/css/all.min.css"
@@ -23,8 +25,8 @@
 	<body>
 		<div class="app">
 			<header class="header">
-				<section class="grid">
-					<nav class="header__navbar">
+				<section class="grid wide">
+					<nav class="header__navbar hide-on-mobile-tablet">
 						<ul class="header__navbar-list">
 							<li
 								class="header__navbar-item header__navbar-item-has-qr header__navbar-item--separator"
@@ -177,12 +179,17 @@
 
                     <!-- Header search-->
                     <div class="header-with-search">
-                        <div class="header__logo">
+                        <label for="mobile-search-checkbox" class="header__mobile-search">
+                            <i class="header__mobile-search-icon fas fa-search"></i>
+                        </label>
+
+                        <div class="header__logo hide-on-tablet">
                             <a href="#" class="header__logo-link">
                                 <img src="./assets/img/logo-50.svg" alt="">
                             </a>
                         </div>
 
+                        <input type="checkbox" hidden id="mobile-search-checkbox" class="header__search-checkbox">
                         <!-- Search bar -->
                         <div class="header__search">
                             <div class="header__search-input-wrap">
@@ -251,7 +258,7 @@
                                                 </div>
                                                 <div class="header__cart-item-body">
                                                     <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
-                                                    <span class="header__cart-item-remove">Delete</span>
+                                                    <span class="header__cart-item-remove"><i class="fa fa-trash"></i></span>
 
                                                 </div>
                                             </div>
@@ -271,7 +278,7 @@
                                                 </div>
                                                 <div class="header__cart-item-body">
                                                     <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
-                                                    <span class="header__cart-item-remove">Delete</span>
+                                                    <span class="header__cart-item-remove"><i class="fa fa-trash"></i></span>
 
                                                 </div>
                                             </div>
@@ -291,7 +298,7 @@
                                                 </div>
                                                 <div class="header__cart-item-body">
                                                     <span class="header__cart-item-description">Type: Mechanical Keyboard</span>
-                                                    <span class="header__cart-item-remove">Delete</span>
+                                                    <span class="header__cart-item-remove"><i class="fa fa-trash"></i></span>
 
                                                 </div>
                                             </div>
@@ -305,11 +312,35 @@
                     </div>
                     <!-- End of Header search-->
 				</section>
+                <ul class="header__sort-bar">
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link">Relevant</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link header__sort-item--active">Latest</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <a href="" class="header__sort-link header__sort-best-selling">Best Selling</a>
+                    </li>
+                    <li class="header__sort-item">
+                        <div class="header__sort-link select-input">Price
+                            <div class="header__sort-icon fas fa-angle-down"></div>
+                            <ul class="select-input__list">
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Price: Lowest to Highest</a>
+                                        </li>
+                                        <li class="select-input__item">
+                                            <a href="" class="select-input__link">Price: Highest to Lowest</a>
+                                        </li>
+                            </ul>
+                        </div>
+                    </li>
+                </ul>
 			</header>
 			<div class="app__container">
-                <div class="grid">
-                    <div class="grid__row app__content">
-                        <div class="grid__column-2">
+                <div class="grid wide">
+                    <div class="row sm-gutter app__content">
+                        <div class="col l-2 m-0 s-0">
                             <nav class="category">
                                 <h3 class="category__heading">
                                     <i class="category__heading-icon fas fa-list"></i>
@@ -332,8 +363,8 @@
                             </nav>
                         </div>
 
-                        <div class="grid__column-10">
-                            <div class="home-filter">
+                        <div class="col l-10 m-12 s-12">
+                            <div class="home-filter hide-on-mobile-tablet">
                                 <span class="home-filter__label">Sort By</span>
                                 <button class="home-filter__btn btn">Popularity ❤️</button>
                                 <button class="home-filter__btn btn btn--primary">Latest 💥</button>
@@ -369,9 +400,43 @@
 
                             </div>
 
+                            <nav class="mobile-category">
+                                <ul class="mobile-category__list">
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Akko Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Filco Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Keychron Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Logitect Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Razer Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Fuhlen Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">DareU Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Edra Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">Ducky Keyboards</a>
+                                    </li>
+                                    <li class="mobile-category__item">
+                                        <a href="" class="mobile-category__link">RK Keyboards</a>
+                                    </li>
+                                </ul>
+                            </nav>
                             <div class="home-product">
-                                <div class="grid__row">
-                                    <div class="grid__column-2-4">
+                                <div class="row sm-gutter">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://product.hstatic.net/1000026716/product/ban-phim-co-akko-3061-world-tour-tokyo-r2-hotswap-ava01__1__e406445911a545eeba46bde939808df5.jpg)">
@@ -411,7 +476,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://sp-ao.shortpixel.ai/client/to_auto,q_lossy,ret_img,w_768/https://akko.vn/wp-content/uploads/2021/12/ban-phim-co-akko-3068b-multi-modes-silent-001-768x768.jpg)">
@@ -451,7 +516,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://d1vm37nfym7tjl.cloudfront.net/web/image/product.product/18370/image_1024/%5BFFBTR63MC-EAG%5D%20B%C3%A0n%20ph%C3%ADm%20c%C6%A1%20Filco%20Majestouch%20Minila-R%20Convertible%20ASAGI%20%28Cherry%20MX%20Blue%20switch%29?unique=a2573cc)">
@@ -493,7 +558,7 @@
 
                                     </div>
 
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://d1vm37nfym7tjl.cloudfront.net/web/image/product.product/23106/image_1024/B%C3%A0n%20ph%C3%ADm%20c%C6%A1%20Keychron%20K6%20Kh%C3%B4ng%20LED%20Hotswap%20-%20Case%20Nh%C3%B4m%20%28Keychron%20Switch%29%20%28Keychron%20Blue%29?unique=cbd8f46)">
@@ -533,7 +598,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://product.hstatic.net/1000026716/product/g815-gallery-2.png.imgw.1384.1038_d9bbb7fbf4f84fc7bdfdfcc6325d369c.jpeg)">
@@ -573,7 +638,7 @@
                                         </a>
                                     </div>
 
-                                    <div class="grid__column-2-4">
+                                    <div class="col l-2-4 m-4 s-6">
                                         <!-- Product item -->
                                         <a href="" class="home-product-item">
                                             <div class="home-product-item__img" style="background-image:url(https://d1vm37nfym7tjl.cloudfront.net/web/image/product.product/23081/image_1024/B%C3%A0n%20ph%C3%ADm%20c%C6%A1%20Keychron%20K12%20Kh%C3%B4ng%20LED%20Hotswap%20-%20Case%20Nh%C3%B4m%20%28Keychron%20Switch%29%20%28Keychron%20Blue%29?unique=887fe42g)">
@@ -656,9 +721,9 @@
                 </div>
             </div>
 			<footer class="footer">
-                <div class="grid">
-                    <div class="grid__row">
-                        <div class="grid__column-2-4">
+                <div class="grid wide">
+                    <div class="row">
+                        <div class="col l-2-4 m-4 s-6">
                             <h3 class="footer__heading">Customer Service</h3>
                             <ul class="footer-list">
                                 <li class="footer-item">
@@ -672,7 +737,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-4 s-6">
                             <h3 class="footer__heading">About Ashuxie Shop</h3>
                             <ul class="footer-list">
                                 <li class="footer-item">
@@ -686,7 +751,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-4 s-6">
 
                             <h3 class="footer__heading">Categories</h3>
                             <ul class="footer-list">
@@ -704,7 +769,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-4 s-6">
 
                             <h3 class="footer__heading">Follow Us</h3>
                             <ul class="footer-list">
@@ -728,7 +793,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="grid__column-2-4">
+                        <div class="col l-2-4 m-8 s-12">
 
                             <h3 class="footer__heading">Shop Application Download</h3>
                             <div class="footer__download">
@@ -741,8 +806,11 @@
                     </div>
                 </div>
                 <div class="footer__bottom">
-                    <div class="grid">
-                        <p class="footer__text">&copy; 2022 Ashuxie Shop All rights reserved</p>
+                    <div class="grid wide">
+                        <div class="col l-12 m-12 s-12">
+
+                            <p class="footer__text">&copy; 2022 Ashuxie Shop All rights reserved</p>
+                        </div>
                     </div>
                 </div>
             </footer>

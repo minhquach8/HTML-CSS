@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>CSS Grid System</title>
+
+		<!-- Grid CSS -->
+		<link rel="stylesheet" href="./grid.css" />
+		<style>
+			* {
+				box-sizing: border-box;
+			}
+
+			body {
+				margin: 0;
+			}
+
+			.container {
+				text-align: center;
+			}
+
+			.course-item {
+				background-color: orange;
+				height: 100px;
+			}
+
+			h1 {
+				color: white;
+				line-height: 100px;
+			}
+		</style>
+	</head>
+
+	<body>
+		<div class="grid wide container">
+			<div class="row">
+				<div class="col l-3 m-6 s-6">
+					<div class="course-item">
+						<h1>Course1</h1>
+					</div>
+				</div>
+				<div class="col l-3 m-6 s-6">
+					<div class="course-item">
+						<h1>Course2</h1>
+					</div>
+				</div>
+				<div class="col l-3 m-6 s-6">
+					<div class="course-item">
+						<h1>Course3</h1>
+					</div>
+				</div>
+				<div class="col l-3 m-6 s-6">
+					<div class="course-item">
+						<h1>Course4</h1>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
